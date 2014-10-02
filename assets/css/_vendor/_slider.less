@@ -1,0 +1,80 @@
+// Slider Styles
+// --------------------------------------------------------------------------
+
+nav.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 101;
+    top: 32%;
+    left: 0;
+    right: 0;
+    max-width: 100% !important;
+    a {
+        position: absolute;
+        display: block;
+        text-decoration: none;
+        color: @color-white--dark;
+        font-size: 4em;
+        text-align: center;
+        .transition;
+        &:hover {
+            color: darken(@color-white--dark, 20%);
+        }
+        i {
+            height: 4em;
+        }
+        &.prev {
+            left: -0.25em;
+        }
+        &.next {
+            right: -0.25em;
+        }
+    }
+}
+nav.slides-pagination {
+    position: absolute;
+    z-index: 101;
+    bottom: 0em;
+    text-align: center;
+    max-width: 100% !important;
+    a {
+        border: 2px solid @color-white--dark;
+        .radius(50%);
+        .margin-horiz(0.3em);
+        width: 0.8em;
+        height: 0.8em;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        text-indent: -100%;
+        &.current {
+            background: @color-white--dark;
+        }
+    }
+}
+.slides {
+    position: relative !important;
+    height: auto !important;
+    display: block;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    background: url(../img/logos/logo-volarre.png) no-repeat center 40%;
+    background-size: 13.125em 2.1875em;
+    .laptop {
+        position: relative;
+        z-index: 100;
+    }
+    .laptop-screen {
+        position: absolute !important;
+        overflow: hidden;
+        display: block;
+        top: 3.6%;
+        left: 11.8%;
+        right: 11.6%;
+        height: 82.3%;
+        z-index: 0;
+    }
+    .slides-container {
+        width: inherit;
+    }
+}

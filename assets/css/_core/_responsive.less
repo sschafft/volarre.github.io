@@ -1,0 +1,87 @@
+/* Responsive
+================================================== */
+
+
+// Phone Screens
+// --------------------------------------------------------------------------
+
+@media only screen and (min-width: 20em) {
+    body {
+        font-size: 90%;
+    }
+    .desktop, .desktop-inline, .desktop-table {
+        display: none !important;
+    }
+    #container {
+        position: relative;
+        z-index: 1;
+        background: none;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 2%;
+    }
+    #hero {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 30em) {
+    body {
+        font-size: 110%;
+    }
+}
+
+// Tablet Screens (Portrait)
+// --------------------------------------------------------------------------
+
+@media only screen and (min-width: 48em) {
+    body {
+        font-size: 110%;
+	}
+	#container {
+        padding: 0 4%;
+    }
+    .desktop {
+        display: block !important;
+    }
+    .desktop-inline {
+        display: inline-block !important;
+    }
+    .desktop-table {
+        display: table-cell !important;
+    }
+    .mobile, .mobile-inline {
+        display: none !important;
+    }
+    #hero {
+        height: 70%;
+    }
+    .slides {
+        background: url(../img/logos/logo-volarre.png) no-repeat center 45%;
+        background-size: 25em 4.1666669em !important;
+    }
+    nav.slides-navigation {
+        top: 42%;
+    }
+}
+
+// Tablet Screens (Tablet Landscape)
+// --------------------------------------------------------------------------
+
+@media only screen and (min-width: 64em) {
+    body {
+        font-size: 110%;
+    }
+    #container {
+        padding: 0 10%;
+    }
+}
+
+// Phone Screens (Desktop)
+// --------------------------------------------------------------------------
+
+@media only screen and (min-width: 75em) {
+    body {
+        font-size: 120%;
+    }
+}

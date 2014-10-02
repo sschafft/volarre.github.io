@@ -1,0 +1,42 @@
+name: Volarre
+pygments: true
+markdown: kramdown
+paginate: 10
+version: 1.0
+
+seo:
+  author: 'Nicholas Kingston, Scott Schaffter'
+  description: 
+  keywords:
+
+contact:
+  phone: '+1 (202) 258-2640'
+  email: ''
+  address:
+    number: 'Suite 115-197'
+    street: '1350 Beverly Road'
+    city:  'Mclean' 
+    state: 'Virginia'
+    zip: '22101'
+
+url: ""
+permalink: /:year/:title
+
+social:
+  facebook: 
+  twitter: ''
+  linkedin:
+  github: ''
+
+google:
+  analytics : ''
+  verification : ''
+
+facebook:
+  admins : ''
+  api : ''
+
+assets:
+  img: '/assets/images/'
+  css: '/assets/stylesheets/'
+  js: '/assets/javascripts/'

@@ -1,0 +1,47 @@
+// Form Reset Styles
+// --------------------------------------------------------------------------
+
+.button {
+    color: @color-white;  
+    font-weight: @light;
+    padding: 0.45em 0.65em;
+    margin: 1em 0;
+    display: inline-block;
+    .radius(0.2em);
+    float: left;
+    &.bkgd-blue {
+        background: @color-blue;
+        &:hover {
+            background: @color-blue--dark;
+        }
+        &:active, &:focus {
+            background: @color-blue--light;
+        }
+    }
+    &.bkgd-red {
+        background: @color-red;
+        &:hover {
+            background: @color-red--dark;
+        }
+        &:active, &:focus {
+            background: @color-red--light;
+        }
+    }
+    &.bkgd-black {
+        background: @color-black;
+        &:hover {
+            background: @color-black--dark;
+        }
+        &:active, &:focus {
+            background: @color-black--light;
+        }
+    }
+}
+button {
+    background: none;
+    font-size: 140%;
+    a {
+        .button;
+        text-decoration: none;
+    }
+}

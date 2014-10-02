@@ -1,0 +1,41 @@
+// Team
+// --------------------------------------------------------------------------
+
+#team {
+    background: @color-red;
+    color: @color-white;
+    text-align: center;
+    .padding-vert(3.625em);
+    font-size: 90%;
+    p {
+        color: @color-white--dark;
+    }
+    .team-member {
+        display: inline-block;
+        width: 320px;
+    }
+    .profile {
+        padding: 1em 2em;
+        .image-container {
+            width: 10em;
+            height: 10em;
+            display: inline-block;
+            img {
+                .radius(100%);
+                .box-shadow(0, 0, 10px, @color-black--light);
+            }
+        }
+        h4 {
+            margin-top: 1em;
+        }
+        h5 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: lighten(@color-red--light, 10%);
+            font-weight: 400;
+        }
+        p {
+
+        }
+    }
+}
