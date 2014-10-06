@@ -83,8 +83,25 @@
                     height: @height;
                     font-weight: 300;
                     letter-spacing: 1px;
+
+                    &:hover {
+                        color: @color-red--dark;
+                    }
                 }
+
+                &.highlight a{
+                    border-bottom:4px solid @color-red--dark;
+                    margin-bottom:1em; 
+
+                    &:hover{
+                        color: @font;
+                        background-color: @color-red--dark;
+                    }              
+                }
+
             }
+
+
 
             &#navbar {
                 background: @color-black;
