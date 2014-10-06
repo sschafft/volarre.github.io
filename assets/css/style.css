@@ -426,12 +426,11 @@ blockquote {
     color: #ef403b;
   }
   [role="navigation"] ul li.highlight a {
-    border-bottom: 4px solid #ef403b;
-    margin-bottom: 1em;
+    background: #ef403b;
   }
   [role="navigation"] ul li.highlight a:hover {
     color: #ffffff;
-    background-color: #ef403b;
+    background: #f2704f;
   }
   [role="navigation"] ul#navbar {
     background: #262524;
