@@ -937,6 +937,17 @@ textarea {
   padding: 1.6em;
   position: relative;
 }
+#services .service-desc h2 {
+  font-weight: 700;
+  font-size: 1.6em;
+  padding: 0;
+}
+#services .service-desc p {
+  font-size: .9em;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
 #services .service-desc.right-side {
   text-align: left;
 }
@@ -971,17 +982,6 @@ textarea {
   top: 50%;
   width: 0;
   height: 0;
-}
-#services h2 {
-  font-weight: 700;
-  font-size: 1.6em;
-  padding: 0;
-}
-#services p {
-  font-size: .9em;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 1em;
 }
 nav.slides-navigation {
   margin: 0 auto;
