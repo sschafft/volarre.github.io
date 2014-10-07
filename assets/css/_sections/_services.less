@@ -1,24 +1,146 @@
 // Services
 // --------------------------------------------------------------------------
 
+@padding: 3em;
+@icon-w: 100px;
+
+@desc-margin: 2.5em;
+@desc-pointer-size: 12px;
+@desc-border-w: 2px;
+
+
 #services {
-  padding-top:3em;
-    h2{
-      padding: .6em 0em;
-      font-size: 1.6em;
-      text-align: center;
+  padding-top:@padding;
+  padding-bottom: @padding;
+  margin-top: 0;
+}
+
+// service listing container
+.service {
+  @line-w: 6px;
+
+  margin-top: -1em;
+  
+  // the line going down the middle
+  //-> make with a psuedo element
+  //-> more controllable than a border b/c we can scooch it to line up
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -(@line-w/2);
+    z-index: 0;
+    width: @line-w;
+    background-color: @color-white--light;
+  }
+  
+  // extend the line on the first & last children
+  // to be flush with the #services container
+  &:first-child {
+
+    margin-top: 0;
+
+    &:after {
+      top: -@padding;
+    }
+  }
+
+  &:last-child:after {
+    bottom: -@padding;
+  }
+
+  // the services that appear on the right
+  //-> use the grid offset class as a styling hook
+  //-> kinda hacky i know, but it's late
+  &.large-offset-6 {
+
+    // move everything to the left side
+    // (instead of the right)
+    &:after {
+      right: auto;
+      left: -(@line-w/2);
+    }
+  
+    .services-icon {
+      right: auto;
+      left: -(@icon-w/2);
     }
 
-    img{
-      width: 200px;
-      padding:2em 1em;
-      margin-left:auto;
-      margin-right: auto;
-      display: block;
+    .services-description {
+      float: right;
+      margin-left: @desc-margin;
+      margin-right: 0;
+
+      &:after {
+        right: auto;
+        left: -(@desc-pointer-size - @desc-border-w - 1px);
+        border: none;
+        .triangle(left, @desc-pointer-size, white);
+      }
+
+      &:before {
+        right: auto;
+        left: -@desc-pointer-size;
+        border: none;
+        .triangle(left, @desc-pointer-size, @color-white--light);
+      }
     }
 
-    p{
-      text-align: justify;
-      font-size: .9em;
+    h2, p {
+      text-align: left;
     }
+  }
+}
+
+// the icon appearing on either side of the service listing
+.services-icon {
+  display: block;
+  width: @icon-w;
+  position: absolute;
+  top: 50%;
+  right: -(@icon-w/2);
+  z-index: 1;
+  margin-top: -(@icon-w/2);
+  border: 6px solid white;
+}
+
+// the words that talk about the things
+.services-description {
+
+  position: relative;
+  margin-right: @desc-margin;
+  padding: 1.6em;
+  border: @desc-border-w solid @color-white--light;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -(@desc-pointer-size - @desc-border-w - 1px);
+    margin-top: -(@desc-pointer-size/2);
+    .triangle(right, @desc-pointer-size, white);
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -@desc-pointer-size;
+    margin-top: -(@desc-pointer-size/2);
+    .triangle(right, @desc-pointer-size, @color-white--light);
+  }
+  
+
+  h2 {
+    padding: .6em 0em;
+    font-size: 1.6em;
+    text-align: right;
+  }
+
+  p {
+    text-align: right;
+    font-size: 0.9em;
+  }
 }

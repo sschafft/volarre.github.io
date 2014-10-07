@@ -7,7 +7,7 @@ title: Home
 <html lang="en">
 <head>
 
-    <title>Volarre || We Make Mentorship Meaningful</title>
+    <title>{{ site.name }} || We Make Mentorship Meaningful</title>
 
     <!-- // Site Info
     ====================================
@@ -79,29 +79,37 @@ title: Home
 
         <section class="baseline" id="services">
             <article class="grid">
-                <div class="columns large-5">
-                    <img src="{{ site.assets.icons }}search.png" />
-                    <h2>Protégé Driven Matching</h2>
-                    <p>Mentors are curated for the protégé based on profile data, peer and supervisor suggestions. The protégé selects a mentor and begins a relationship directly related to their learning need.</p>
+                <div class="service columns large-6">
+                    <img class="services-icon" src="{{ site.assets.icons }}search.png" />
+                    <div class="services-description">
+                        <h2>Protégé Driven Matching</h2>
+                        <p>Mentors are curated for the protégé based on profile data, peer and supervisor suggestions. The protégé selects a mentor and begins a relationship directly related to their learning need.</p>
+                    </div>
                 </div>
-                <div class="columns large-5 large-offset-2">
-                    <img src="{{ site.assets.icons }}tactics.png" />
-                    <h2>Automated Relationship Framework</h2>
-                    <p>Based on industry-leading processes, the Volarre mentoring framework makes it easy to build and sustain an impactful mentoring relationship.</p>
-                    <p>Clarifying timelines, expectations, and goal-setting are all automated and faciliated with guidance at each stage of the mentoring relationship. </p>
+                <div class="service columns large-6 large-offset-6">
+                    <img class="services-icon" src="{{ site.assets.icons }}tactics.png" />
+                    <div class="services-description">
+                        <h2>Automated Relationship Framework</h2>
+                        <p>Based on industry-leading processes, the Volarre mentoring framework makes it easy to build and sustain an impactful mentoring relationship.</p>
+                        <p>Clarifying timelines, expectations, and goal-setting are all automated and faciliated with guidance at each stage of the mentoring relationship. </p>
+                    </div>
                                        
                 </div>
-                <div class="columns large-5">
-                    <img src="{{ site.assets.icons }}speed.png" />
-                    <h2>Measurable Impact</h2>
-                    <p>Visualize the impact of your mentoring program at a glance. Live analytics help you support and actively grow your mentoring program by seeing where help is needed.</p>
+                <div class="service columns large-6">
+                    <img class="services-icon" src="{{ site.assets.icons }}speed.png" />
+                    <div class="services-description">
+                        <h2>Measurable Impact</h2>
+                        <p>Visualize the impact of your mentoring program at a glance. Live analytics help you support and actively grow your mentoring program by seeing where help is needed.</p>
+                    </div>
                     
                 </div>
-                <div class="columns large-5 large-offset-2">
-                    <img src="{{ site.assets.icons }}box.png" />
-                    <h2>Mentorship as a Service</h2>
-                    <p>Volarre includes a personal network manager to that will support your network's growth and impact.</p>
-                    <p>Beyond a software platform, Volarre provides mentoring as a service for your organization. </p>
+                <div class="service columns large-6 large-offset-6">
+                    <img class="services-icon" src="{{ site.assets.icons }}box.png" />
+                    <div class="services-description">
+                        <h2>Mentorship as a Service</h2>
+                        <p>Volarre includes a personal network manager to that will support your network's growth and impact.</p>
+                        <p>Beyond a software platform, Volarre provides mentoring as a service for your organization. </p>
+                    </div>
                 </div>
             </article>
         </section>
