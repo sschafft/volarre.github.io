@@ -21,25 +21,23 @@ $(document).ready(function( $ ){
         duration:1500,
     });
 
-});
-$(document).ready(function( ){
-    $('.slides').superslides({
-            play: 4000,
-            slide_easing: 'easeInOutCubic',
-            slide_speed: 800,
-            pagination: true,
-            hashchange: false,
-            scrollable: true,
-            inherit_width_from: '.laptop-screen',
-            inherit_height_from: '.laptop-screen',
-        });
-});
-
-$(document).ready(function( $ ){
-
     $('li#show-menu').click(function(){
         $('ul#menu, li#show-menu').toggleClass('active')
         return false;
+    });
+
+});
+
+$(window).load(function( ){
+    $('.slides').superslides({
+        play: 4000,
+        slide_easing: 'easeInOutCubic',
+        slide_speed: 800,
+        pagination: true,
+        hashchange: false,
+        scrollable: true,
+        inherit_width_from: '.laptop-screen',
+        inherit_height_from: '.laptop-screen',
     });
 });
 
