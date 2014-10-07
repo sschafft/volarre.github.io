@@ -7,7 +7,7 @@
 
 @media only screen and (min-width: 20em) {
     body {
-        font-size: 90%;
+        font-size: 80%;
     }
     .desktop, .desktop-inline, .desktop-table {
         display: none !important;
@@ -23,11 +23,44 @@
     #hero {
         height: 100%;
     }
+    #services {
+        &:before {
+            left: 15%;
+        }
+        .service-container {
+            text-align: right;
+        }
+        .service-image {
+            left: 10%;
+            width: 25%;
+        }
+        .service-desc {
+            margin-left: 20%;
+            width: 70%;
+            &.left-side {
+                text-align: left;
+                &:before {
+                    left: @tri-size-border * -1;
+                    margin-top: @tri-size-border / -2 ;
+                    border-right: @tri-size-border solid @color-white;
+                    border-top: @tri-size-border solid transparent;
+                    border-bottom: @tri-size-border solid transparent;
+                }
+                &:after {
+                    left: @tri-size * -1;
+                    margin-top: (@tri-size - @border-size - 2px) / -2;
+                    border-right: @tri-size solid #ffffff;
+                    border-top: @tri-size solid transparent;
+                    border-bottom: @tri-size solid transparent;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 30em) {
     body {
-        font-size: 110%;
+        font-size: 90%;
     }
 }
 
@@ -36,7 +69,7 @@
 
 @media only screen and (min-width: 48em) {
     body {
-        font-size: 110%;
+        font-size: 100%;
 	}
 	#container {
         padding: 0 4%;
@@ -62,6 +95,46 @@
     }
     nav.slides-navigation {
         top: 42%;
+    }
+    #services { 
+        &:before {
+            left: 50%;
+        }
+        .service-container {
+            &:nth-child(odd) {
+                text-align: left;
+            }
+        }
+        .service-image {
+            left: 50%;
+            margin-left: -12.5%;
+        }
+        .service-desc {
+            margin-left: 0;
+            width: 35%;
+            &.left-side {
+                text-align: right;
+                &:before {
+                    right: @tri-size-border * -1 !important;
+                    left: auto;
+                    margin-top: @tri-size-border / -2;
+                    border-left: @tri-size-border solid @color-white;
+                    border-right: none;
+                    border-top: @tri-size-border solid transparent;
+                    border-bottom: @tri-size-border solid transparent;
+                }
+                &:after {
+                    right: @tri-size * -1 !important;
+                    left: auto;
+                    margin-top: (@tri-size - @border-size - 2px) / -2;
+                    border-left: @tri-size solid #ffffff;
+                    border-right: none;
+                    border-top: @tri-size solid transparent;
+                    border-bottom: @tri-size solid transparent;
+                    clear: both;
+                }
+            }
+        }
     }
 }
 

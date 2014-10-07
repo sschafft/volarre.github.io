@@ -2,23 +2,107 @@
 // --------------------------------------------------------------------------
 
 #services {
-  padding-top:3em;
+    padding-top:5em;
+    padding-bottom: em;
+    position: relative;
+    height: 100%;
+    &:before {
+        content: " ";
+        height: 75%;
+        margin-top: 10em;
+        display: block;
+        position: absolute;
+        width: 0.3em;
+        background: @color-white;
+    }
+
+    .service-container {
+        width: 100%;
+        &:nth-child(even) {
+            text-align: right;
+        }
+
+        &:before, &:after {
+            content: " ";
+            display: table; 
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .service-item {
+        position: relative;
+        margin-bottom: 5em;
+    }
+    .service-image {
+        width: 20%;
+        text-align: center;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
+        .radius(100%);
+        display: block;
+        border: 7px solid #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10%;
+        margin-top: -10%;
+        img {
+            .radius(100%);
+        }
+    }
+    .service-desc {
+        display: inline-block;
+        width: 35%;
+        border: @border-size solid @color-white;
+        padding: 1.6em;
+        position: relative;
+        &.right-side {
+            text-align: left;
+            &:before, &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                width: 0; 
+                height: 0;    
+            }
+            &:before {
+                left: @tri-size-border * -1;
+                margin-top: @tri-size-border / -2;
+                border-right: @tri-size-border solid @color-white;
+                border-top: @tri-size-border solid transparent;
+                border-bottom: @tri-size-border solid transparent;
+            }
+            &:after {
+                left: @tri-size * -1;
+                margin-top: (@tri-size - @border-size - 2px) / -2;
+                border-right: @tri-size solid #ffffff;
+                border-top: @tri-size solid transparent;
+                border-bottom: @tri-size solid transparent;
+            }
+        }
+        &.left-side {
+            &:before, &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 50%;
+                width: 0; 
+                height: 0;    
+            }
+        }
+    }
     h2{
-      padding: .6em 0em;
-      font-size: 1.6em;
-      text-align: center;
+        font-weight: @bold;
+        font-size: 1.6em;
+        padding: 0;
     }
-
-    img{
-      width: 200px;
-      padding:2em 1em;
-      margin-left:auto;
-      margin-right: auto;
-      display: block;
-    }
-
-    p{
-      text-align: justify;
-      font-size: .9em;
+    p {
+        font-size: .9em;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 1em;
     }
 }
