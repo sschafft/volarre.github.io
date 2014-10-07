@@ -596,14 +596,14 @@ textarea {
   background: #6db6d0;
 }
 .button.bkgd-red {
-  background: #f05844;
+  background: #ef403b;
 }
 .button.bkgd-red:hover {
-  background: #ef403b;
+  background: #f2704f;
 }
 .button.bkgd-red:active,
 .button.bkgd-red:focus {
-  background: #f2704f;
+  background: #f05844;
 }
 .button.bkgd-black {
   background: #262524;
@@ -645,14 +645,14 @@ button a.bkgd-blue:focus {
   background: #6db6d0;
 }
 button a.bkgd-red {
-  background: #f05844;
+  background: #ef403b;
 }
 button a.bkgd-red:hover {
-  background: #ef403b;
+  background: #f2704f;
 }
 button a.bkgd-red:active,
 button a.bkgd-red:focus {
-  background: #f2704f;
+  background: #f05844;
 }
 button a.bkgd-black {
   background: #262524;
