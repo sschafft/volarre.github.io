@@ -37,6 +37,7 @@ facebook:
   api : ''
 
 assets:
+  mov: '/assets/img/mov/'
   img: '/assets/img/'
   icons: '/assets/img/icons/'
   css: '/assets/stylesheets/'
