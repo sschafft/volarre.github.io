@@ -801,6 +801,14 @@ button a.bkgd-black:focus {
   height: 100%;
   width: 100%;
 }
+#hero video {
+  display: block;
+}
+@media screen and (max-device-width: 800px) {
+  #bgvid {
+    display: none;
+  }
+}
 #about {
   background: #f4f3f0;
   padding-top: 3.625em;
