@@ -30,7 +30,7 @@ $(document).ready(function( $ ){
 
 $(window).load(function( ){
     $('.slides').superslides({
-        play: 4000,
+        play: false,
         slide_easing: 'easeInOutCubic',
         slide_speed: 800,
         pagination: true,
