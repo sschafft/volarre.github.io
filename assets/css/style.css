@@ -899,15 +899,15 @@ textarea {
 }
 #services {
   padding-top: 5em;
-  padding-bottom: em;
+  padding-bottom: 5em;
   position: relative;
   height: 100%;
   background: #ffffff;
 }
 #services:before {
   content: " ";
-  height: 75%;
-  margin-top: 10em;
+  height: 60%;
+  margin-top: 22em;
   display: block;
   position: absolute;
   width: 0.3em;
@@ -917,14 +917,6 @@ textarea {
   width: 100%;
   position: relative;
   height: 100%;
-}
-#services .service-container:before {
-  content: " ";
-  height: 75%;
-  display: block;
-  position: absolute;
-  width: 0.3em;
-  background: #eceade;
 }
 #services .service-container:nth-child(even) {
   text-align: right;
