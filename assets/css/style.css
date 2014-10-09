@@ -907,7 +907,6 @@ textarea {
 #services:before {
   content: " ";
   height: 60%;
-  margin-top: 22em;
   display: block;
   position: absolute;
   width: 0.3em;
@@ -1375,6 +1374,7 @@ nav.slides-pagination a.current {
   }
   #services:before {
     left: 15%;
+    margin-top: 45em;
   }
   #services .service-container {
     text-align: right;
@@ -1442,6 +1442,7 @@ nav.slides-pagination a.current {
   }
   #services:before {
     left: 50%;
+    margin-top: 22em;
   }
   #services .service-container:nth-child(odd) {
     text-align: left;
