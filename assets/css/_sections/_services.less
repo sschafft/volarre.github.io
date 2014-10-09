@@ -19,6 +19,16 @@
 
     .service-container {
         width: 100%;
+        position: relative;
+        height: 100%;
+        &:before {
+            content: " ";
+            height: 75%;
+            display: block;
+            position: absolute;
+            width: 0.3em;
+            background: @color-white;
+        }
         &:nth-child(even) {
             text-align: right;
         }

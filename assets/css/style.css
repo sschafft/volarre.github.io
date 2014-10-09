@@ -915,6 +915,16 @@ textarea {
 }
 #services .service-container {
   width: 100%;
+  position: relative;
+  height: 100%;
+}
+#services .service-container:before {
+  content: " ";
+  height: 75%;
+  display: block;
+  position: absolute;
+  width: 0.3em;
+  background: #eceade;
 }
 #services .service-container:nth-child(even) {
   text-align: right;
