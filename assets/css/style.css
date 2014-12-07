@@ -899,15 +899,14 @@ textarea {
 }
 #services {
   padding-top: 5em;
-  padding-bottom: em;
+  padding-bottom: 5em;
   position: relative;
   height: 100%;
   background: #ffffff;
 }
 #services:before {
   content: " ";
-  height: 75%;
-  margin-top: 10em;
+  height: 60%;
   display: block;
   position: absolute;
   width: 0.3em;
@@ -915,6 +914,8 @@ textarea {
 }
 #services .service-container {
   width: 100%;
+  position: relative;
+  height: 100%;
 }
 #services .service-container:nth-child(even) {
   text-align: right;
@@ -1373,6 +1374,7 @@ nav.slides-pagination a.current {
   }
   #services:before {
     left: 15%;
+    margin-top: 45em;
   }
   #services .service-container {
     text-align: right;
@@ -1440,6 +1442,7 @@ nav.slides-pagination a.current {
   }
   #services:before {
     left: 50%;
+    margin-top: 22em;
   }
   #services .service-container:nth-child(odd) {
     text-align: left;
